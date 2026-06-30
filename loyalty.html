@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loyalty Programme — Purple Coffee | Maseru, Lesotho</title>
+  <meta name="description" content="Join the Purple Rewards Programme. Earn a stamp with every purchase, and your 10th coffee is on us. Free to join at any Purple Coffee visit." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .stamp-card {
+      background: var(--forest);
+      border-radius: 8px;
+      padding: 36px;
+      max-width: 580px;
+      margin: 0 auto;
+      box-shadow: var(--shadow-lg);
+    }
+    .stamp-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 28px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid rgba(255,255,255,0.12);
+    }
+    .stamp-card-title {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      color: var(--white);
+    }
+    .stamp-card-title span { color: var(--gold-light); }
+    .stamp-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+    .stamp {
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .stamp.filled { background: var(--gold); border-color: var(--gold); }
+    .stamp.filled::after { content: ''; width: 10px; height: 10px; border-radius: 50%; background: var(--white); }
+    .stamp.free {
+      background: rgba(212,175,90,0.15);
+      border-color: var(--gold-light);
+    }
+    .stamp.free-label {
+      font-family: var(--font-body);
+      font-size: 0.6rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--gold-light);
+      text-transform: uppercase;
+    }
+    .stamp-note { font-size: 0.78rem; color: rgba(255,255,255,0.5); text-align: center; margin-top: 12px; }
+
+    .benefit-row {
+      display: flex;
+      gap: 20px;
+      padding: 20px 0;
+      border-bottom: 1px solid var(--warm-gray);
+      align-items: flex-start;
+    }
+    .benefit-row:last-child { border-bottom: none; }
+    .benefit-num {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--warm-gray);
+      min-width: 48px;
+      line-height: 1;
+    }
+    .benefit-text h4 { font-family: var(--font-body); font-size: 0.9rem; font-weight: 600; color: var(--forest); margin-bottom: 4px; }
+    .benefit-text p { font-size: 0.83rem; color: var(--ink-mid); line-height: 1.65; }
+
+    .faq-item { border-bottom: 1px solid var(--warm-gray); padding: 20px 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q { font-family: var(--font-body); font-size: 0.92rem; font-weight: 600; color: var(--forest); margin-bottom: 8px; }
+    .faq-a { font-size: 0.85rem; color: var(--ink-mid); line-height: 1.7; }
+  </style>
+</head>
+<body>
+
+<nav id="navbar" class="solid">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Purple <span>Coffee</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="preorder.html">Pre-Order</a></li>
+      <li><a href="booking.html">Reservations</a></li>
+      <li><a href="delivery.html">Delivery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="preorder.html" class="btn btn-gold">Order Now</a></div>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<nav class="mobile-nav">
+  <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="preorder.html">Pre-Order</a>
+  <a href="booking.html">Reservations</a><a href="delivery.html">Delivery</a>
+  <a href="loyalty.html">Loyalty</a><a href="about.html">About Us</a><a href="contact.html">Contact</a>
+</nav>
+<div class="nav-overlay"></div>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span class="sep">/</span><span class="current">Loyalty Programme</span>
+    </div>
+    <h1>Purple Rewards</h1>
+    <p>Our way of saying thank you. Collect stamps with every purchase and earn free coffee just for being a regular.</p>
+  </div>
+</div>
+
+<!-- How it works -->
+<section class="section-pad" style="background:var(--white);">
+  <div class="container">
+    <div class="grid-2" style="gap:72px;align-items:center;">
+      <div>
+        <span class="eyebrow">How It Works</span>
+        <h2 class="section-title">Simple. Rewarding. Free.</h2>
+        <div class="divider"></div>
+        <div class="loyalty-steps" style="display:flex;flex-direction:column;gap:0;margin-top:0;">
+          <div class="benefit-row">
+            <span class="benefit-num">01</span>
+            <div class="benefit-text">
+              <h4>Pick Up Your Card</h4>
+              <p>Ask any team member for a Purple Rewards card on your next visit. There's no registration, no app, and no fee. Just a physical stamp card to keep in your wallet.</p>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <span class="benefit-num">02</span>
+            <div class="benefit-text">
+              <h4>Earn a Stamp Per Purchase</h4>
+              <p>Every time you buy any drink or food item, you earn one stamp. On Fridays, every purchase earns you two stamps — our Double Stamp Friday promotion.</p>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <span class="benefit-num">03</span>
+            <div class="benefit-text">
+              <h4>Your 10th Is Free</h4>
+              <p>Fill your card with 10 stamps and redeem it for any premium coffee of your choice, completely on us. No restrictions — any drink on the hot or cold menu qualifies.</p>
+            </div>
+          </div>
+          <div class="benefit-row">
+            <span class="benefit-num">04</span>
+            <div class="benefit-text">
+              <h4>Birthday Bonus</h4>
+              <p>Registered members receive a complimentary coffee on their birthday month. Simply show your ID and loyalty card to claim.</p>
+            </div>
+          </div>
+        </div>
+        <a href="contact.html" class="btn btn-primary" style="margin-top:12px;">Register Your Card</a>
+      </div>
+
+      <div>
+        <p style="font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--ink-light);margin-bottom:20px;text-align:center;">Sample Loyalty Card</p>
+        <div class="stamp-card">
+          <div class="stamp-card-header">
+            <div>
+              <div class="stamp-card-title">Purple <span>Rewards</span></div>
+              <p style="font-size:0.75rem;color:rgba(255,255,255,0.5);margin-top:4px;">10 stamps = 1 free premium coffee</p>
+            </div>
+            <div style="text-align:right;">
+              <div style="font-size:0.7rem;color:rgba(255,255,255,0.4);">Card No.</div>
+              <div style="font-size:0.9rem;color:var(--gold-light);font-weight:600;">PC-00000</div>
+            </div>
+          </div>
+          <div class="stamp-grid">
+            <div class="stamp filled"></div>
+            <div class="stamp filled"></div>
+            <div class="stamp filled"></div>
+            <div class="stamp filled"></div>
+            <div class="stamp filled"></div>
+            <div class="stamp filled"></div>
+            <div class="stamp filled"></div>
+            <div class="stamp"></div>
+            <div class="stamp"></div>
+            <div class="stamp free"><span class="free-label">Free</span></div>
+          </div>
+          <p class="stamp-note">7 of 10 stamps collected — 3 more until your free coffee</p>
+        </div>
+
+        <div style="margin-top:28px;padding:24px;background:var(--gold-pale);border-radius:var(--radius);border:1px solid rgba(184,146,42,0.2);">
+          <h4 style="font-family:var(--font-body);font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">Double Stamp Fridays</h4>
+          <p style="font-size:0.87rem;color:var(--ink-mid);line-height:1.7;">Every Friday, each purchase earns two stamps instead of one. It's the fastest way to fill your card. No minimum spend required.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Perks -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="text-center">
+      <span class="eyebrow">Member Perks</span>
+      <h2 class="section-title">What You Unlock</h2>
+      <div class="divider divider-center" style="background:rgba(255,255,255,0.15);"></div>
+    </div>
+    <div class="grid-3" style="margin-top:52px;">
+      <div class="testimonial-card">
+        <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-light);margin-bottom:16px;">Core Benefit</div>
+        <h3 style="color:var(--white);font-size:1.4rem;margin-bottom:10px;">Free Premium Coffee</h3>
+        <p style="color:rgba(255,255,255,0.7);font-size:0.87rem;line-height:1.75;">Every 10th drink on the menu — including our signature Purple Lavender Latte and 24hr Cold Brew — is completely free with a completed stamp card.</p>
+      </div>
+      <div class="testimonial-card">
+        <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-light);margin-bottom:16px;">Weekly Bonus</div>
+        <h3 style="color:var(--white);font-size:1.4rem;margin-bottom:10px;">Double Stamp Fridays</h3>
+        <p style="color:rgba(255,255,255,0.7);font-size:0.87rem;line-height:1.75;">Visit any Friday and every item you purchase earns two stamps. A full card in 5 Friday visits — or mix and match across the week.</p>
+      </div>
+      <div class="testimonial-card">
+        <div style="font-size:0.7rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold-light);margin-bottom:16px;">Annual Treat</div>
+        <h3 style="color:var(--white);font-size:1.4rem;margin-bottom:10px;">Birthday Coffee</h3>
+        <p style="color:rgba(255,255,255,0.7);font-size:0.87rem;line-height:1.75;">Registered members receive one complimentary coffee during their birthday month. Just show your loyalty card and a valid ID when you visit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section-pad" style="background:var(--cream);">
+  <div class="container" style="max-width:760px;">
+    <div class="text-center">
+      <span class="eyebrow">Questions</span>
+      <h2 class="section-title">Frequently Asked</h2>
+      <div class="divider divider-center"></div>
+    </div>
+    <div style="margin-top:40px;">
+      <div class="faq-item">
+        <p class="faq-q">How do I get a loyalty card?</p>
+        <p class="faq-a">Simply ask any team member at the counter during your next visit. Cards are free and there's no sign-up form required to start collecting stamps.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Does every purchase earn a stamp, or only drinks?</p>
+        <p class="faq-a">Every purchase earns a stamp — drinks, pastries, and snacks all count. You earn one stamp per transaction, not per item.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Can I use my free coffee on any drink?</p>
+        <p class="faq-a">Yes. A completed card (10 stamps) can be redeemed for any single drink on our menu — hot or cold, including signature drinks. There's no restriction on which item you choose.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Do stamps expire?</p>
+        <p class="faq-a">Stamps are valid for 12 months from the date of the first stamp on a card. We encourage you to keep visiting so you never lose progress.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">How do I register for the birthday benefit?</p>
+        <p class="faq-a">Visit our contact page or speak to a team member in-store to register your card with your name and birth month. No other personal information is required.</p>
+      </div>
+      <div class="faq-item">
+        <p class="faq-q">Can I earn stamps on delivery or pre-orders?</p>
+        <p class="faq-a">Currently, stamps are only collected for in-store purchases. We're working on extending the programme to pre-orders and delivery — watch this space.</p>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:48px;">
+      <p style="color:var(--ink-mid);font-size:0.9rem;margin-bottom:16px;">Have a question not covered here?</p>
+      <a href="contact.html" class="btn btn-outline-dark">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Purple <span>Coffee</span></div>
+        <p>Maseru's most beloved coffee destination since 2019.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a><a href="menu.html">Menu</a>
+          <a href="preorder.html">Pre-Order</a><a href="booking.html">Reservations</a>
+          <a href="delivery.html">Delivery</a><a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <div class="footer-links">
+          <a href="about.html">About Us</a><a href="loyalty.html">Loyalty Programme</a><a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <div class="footer-hours">
+          <div class="hour-row"><span class="day">Mon – Fri</span><span class="time">7:00 – 20:00</span></div>
+          <div class="hour-row"><span class="day">Saturday</span><span class="time">8:00 – 18:00</span></div>
+          <div class="hour-row"><span class="day">Sunday</span><span class="time">9:00 – 17:00</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Purple Coffee, Maseru. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<script src="js/main.js"></script>
+</body>
+</html>

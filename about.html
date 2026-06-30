@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Purple Coffee | Maseru, Lesotho</title>
+  <meta name="description" content="The story behind Purple Coffee — Maseru's finest café. Learn about our origins, our team, and our commitment to exceptional coffee since 2019." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    /* Timeline */
+    .timeline { position: relative; max-width: 760px; margin: 52px auto 0; }
+    .timeline::before {
+      content: ''; position: absolute; left: 50%; top: 0; bottom: 0;
+      width: 1px; background: var(--warm-gray); transform: translateX(-50%);
+    }
+    .t-item { display: grid; grid-template-columns: 1fr 40px 1fr; gap: 24px; margin-bottom: 48px; align-items: start; }
+    .t-content { background: var(--cream); border-radius: var(--radius); padding: 24px 28px; box-shadow: var(--shadow); }
+    .t-content h3 { font-size: 1.1rem; color: var(--forest); margin-bottom: 6px; }
+    .t-content p { font-size: 0.85rem; color: var(--ink-mid); line-height: 1.7; }
+    .t-item:nth-child(even) .t-content:first-child { grid-column: 3; order: 3; }
+    .t-center { display: flex; flex-direction: column; align-items: center; padding-top: 20px; }
+    .t-dot { width: 14px; height: 14px; border-radius: 50%; background: var(--gold); border: 3px solid var(--white); box-shadow: 0 0 0 3px var(--warm-gray); }
+    .t-year { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.1em; color: var(--forest); margin-top: 8px; }
+
+    /* Values */
+    .value-card { padding: 32px; border: 1px solid var(--warm-gray); border-radius: var(--radius); }
+    .value-card h3 { font-size: 1.15rem; color: var(--forest); margin: 12px 0 8px; }
+    .value-card p { font-size: 0.85rem; color: var(--ink-mid); line-height: 1.7; }
+    .value-icon-wrap { width: 42px; height: 42px; border-radius: var(--radius); background: var(--forest-pale); display: flex; align-items: center; justify-content: center; }
+    .value-icon-wrap svg { width: 20px; height: 20px; stroke: var(--forest); }
+
+    /* Sourcing */
+    .origin-item { display: flex; align-items: center; gap: 16px; padding: 16px; border: 1px solid var(--warm-gray); border-radius: var(--radius); margin-bottom: 12px; transition: border-color var(--transition); }
+    .origin-item:hover { border-color: var(--gold); }
+    .origin-flag { font-size: 2rem; line-height: 1; }
+    .origin-info h4 { font-family: var(--font-body); font-size: 0.88rem; font-weight: 600; color: var(--forest); margin-bottom: 2px; }
+    .origin-info p { font-size: 0.8rem; color: var(--ink-light); }
+    .origin-badge { margin-left: auto; background: var(--forest-pale); color: var(--forest); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; padding: 4px 10px; border-radius: 2px; }
+
+    /* Team */
+    .team-card { border-radius: var(--radius); overflow: hidden; background: var(--white); box-shadow: var(--shadow); }
+    .team-img { aspect-ratio: 3/4; overflow: hidden; }
+    .team-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
+    .team-card:hover .team-img img { transform: scale(1.04); }
+    .team-body { padding: 20px; }
+    .team-name { font-size: 1.1rem; color: var(--forest); margin-bottom: 2px; }
+    .team-role { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+    .team-bio { font-size: 0.82rem; color: var(--ink-mid); line-height: 1.65; }
+
+    @media (max-width: 700px) {
+      .timeline::before { left: 20px; }
+      .t-item { grid-template-columns: 40px 1fr; }
+      .t-item:nth-child(even) .t-content:first-child { grid-column: auto; order: 0; }
+      .t-blank { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav id="navbar" class="solid">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Purple <span>Coffee</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="preorder.html">Pre-Order</a></li>
+      <li><a href="booking.html">Reservations</a></li>
+      <li><a href="delivery.html">Delivery</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="preorder.html" class="btn btn-gold">Order Now</a></div>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<nav class="mobile-nav">
+  <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="preorder.html">Pre-Order</a>
+  <a href="booking.html">Reservations</a><a href="delivery.html">Delivery</a>
+  <a href="loyalty.html">Loyalty</a><a href="about.html">About Us</a><a href="contact.html">Contact</a>
+</nav>
+<div class="nav-overlay"></div>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a><span class="sep">/</span><span class="current">About Us</span>
+    </div>
+    <h1>Our Story</h1>
+    <p>From a single dream to Maseru's most beloved café — the story of Purple Coffee.</p>
+  </div>
+</div>
+
+<!-- Intro -->
+<section class="about-section section-pad">
+  <div class="container">
+    <div class="grid-2">
+      <div>
+        <span class="eyebrow">Est. 2019</span>
+        <h2 class="section-title">Where Maseru Comes to Savour Every Sip</h2>
+        <div class="divider"></div>
+        <p style="color:var(--ink-mid);line-height:1.85;margin-bottom:16px;">Purple Coffee was born in 2019 from a single ambition: to bring world-class specialty coffee culture to the heart of Maseru. What began as a small corner café on Kingsway has grown into Lesotho's most celebrated coffee destination — with professional espresso machines, single-origin beans, and a team of passionate baristas who treat every cup as craft.</p>
+        <p style="color:var(--ink-mid);line-height:1.85;">We believe great coffee is more than a drink. It's a moment of pause, a reason to connect, a daily ritual worth doing properly. Everything we do — from sourcing to service — is in service of that belief.</p>
+      </div>
+      <div class="about-img-wrap">
+        <div class="about-img-main">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=900&auto=format&fit=crop&q=80" alt="Purple Coffee interior" loading="lazy" />
+        </div>
+        <div class="about-img-accent">
+          <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&auto=format&fit=crop&q=80" alt="Coffee beans" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline -->
+<section style="background:var(--white);padding:var(--section-pad) 0;">
+  <div class="container">
+    <div class="text-center">
+      <span class="eyebrow">Our Journey</span>
+      <h2 class="section-title">Five Years in the Making</h2>
+      <div class="divider divider-center"></div>
+    </div>
+    <div class="timeline">
+      <div class="t-item">
+        <div class="t-content">
+          <h3>The First Cup</h3>
+          <p>Purple Coffee opened its doors on Kingsway Road with two espresso machines, four tables, and an unwavering belief that Maseru deserved exceptional coffee.</p>
+        </div>
+        <div class="t-center"><div class="t-dot"></div><span class="t-year">2019</span></div>
+        <div class="t-blank"></div>
+      </div>
+      <div class="t-item">
+        <div class="t-blank"></div>
+        <div class="t-center"><div class="t-dot"></div><span class="t-year">2020</span></div>
+        <div class="t-content">
+          <h3>The Bakery Begins</h3>
+          <p>We launched our in-house bakery, producing croissants, muffins, and loaves from scratch each morning. The Blueberry Muffin quickly became a city-wide favourite.</p>
+        </div>
+      </div>
+      <div class="t-item">
+        <div class="t-content">
+          <h3>Direct Sourcing</h3>
+          <p>We established direct-trade relationships with Ethiopian Yirgacheffe and Rwandan highland farmers, giving us full control of the bean-to-cup journey.</p>
+        </div>
+        <div class="t-center"><div class="t-dot"></div><span class="t-year">2021</span></div>
+        <div class="t-blank"></div>
+      </div>
+      <div class="t-item">
+        <div class="t-blank"></div>
+        <div class="t-center"><div class="t-dot"></div><span class="t-year">2022</span></div>
+        <div class="t-content">
+          <h3>Office Delivery Launch</h3>
+          <p>Purple Coffee expanded beyond its walls with an office delivery service across Maseru CBD, serving corporate clients from LNDC Centre to Finance House.</p>
+        </div>
+      </div>
+      <div class="t-item">
+        <div class="t-content">
+          <h3>Purple Rewards Programme</h3>
+          <p>We introduced our loyalty stamp card, rewarding our community of regulars with every visit. Over 3,000 cards issued in the first three months.</p>
+        </div>
+        <div class="t-center"><div class="t-dot"></div><span class="t-year">2023</span></div>
+        <div class="t-blank"></div>
+      </div>
+      <div class="t-item">
+        <div class="t-blank"></div>
+        <div class="t-center"><div class="t-dot"></div><span class="t-year">2024</span></div>
+        <div class="t-content">
+          <h3>Maseru's Most Loved</h3>
+          <p>Recognised as Maseru's highest-rated café with over 12,000 customers served and a 5-star Google rating maintained for 18 consecutive months.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Values -->
+<section style="background:var(--cream);padding:var(--section-pad) 0;">
+  <div class="container">
+    <div class="text-center">
+      <span class="eyebrow">What We Stand For</span>
+      <h2 class="section-title">Our Values</h2>
+      <div class="divider divider-center"></div>
+    </div>
+    <div class="grid-3" style="margin-top:52px;">
+      <div class="value-card">
+        <div class="value-icon-wrap">
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.36-6.36-1.41 1.41M6.05 17.95l-1.41 1.41M17.95 17.95l-1.41-1.41M6.05 6.05 4.64 7.46"/></svg>
+        </div>
+        <h3>Quality Without Compromise</h3>
+        <p>From bean sourcing to the final pour, we hold every step to the highest standard. We never cut corners on ingredients, training, or equipment.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon-wrap">
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/></svg>
+        </div>
+        <h3>Community First</h3>
+        <p>Purple Coffee exists because of Maseru. We give back through local hiring, supporting nearby suppliers, and creating a space where everyone feels genuinely welcome.</p>
+      </div>
+      <div class="value-card">
+        <div class="value-icon-wrap">
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M20.893 13.393l-1.135-1.135a2.252 2.252 0 01-.421-.585l-1.08-2.16a.414.414 0 00-.663-.107.827.827 0 01-.812.21l-1.273-.363a.89.89 0 00-.738 1.595l.587.39c.59.395.674 1.23.172 1.732l-.2.2c-.212.212-.33.498-.33.796v.41c0 .409-.11.809-.32 1.158l-1.315 2.191a2.11 2.11 0 01-1.81 1.025 1.055 1.055 0 01-1.055-1.055v-1.172c0-.92-.56-1.747-1.414-2.089l-.655-.261a2.25 2.25 0 01-1.383-2.46l.007-.042a2.25 2.25 0 01.29-.787l.09-.15a2.25 2.25 0 012.37-1.048l1.178.236a1.125 1.125 0 001.302-.795l.208-.73a1.125 1.125 0 00-.578-1.315l-.665-.332-.091.091a2.25 2.25 0 01-1.591.659h-.18c-.249 0-.487.1-.662.274a.931.931 0 01-1.458-1.137l1.411-2.353a2.25 2.25 0 00.286-.76m11.928 9.869A9 9 0 008.965 3.525m11.928 9.868A9 9 0 118.965 3.525"/></svg>
+        </div>
+        <h3>Ethical Sourcing</h3>
+        <p>We pay fair prices directly to our farming partners in Ethiopia and Rwanda. Sustainability is not a marketing position — it is built into every purchasing decision we make.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sourcing -->
+<section class="section-pad" style="background:var(--white);">
+  <div class="container">
+    <div class="grid-2">
+      <div>
+        <span class="eyebrow">Bean to Cup</span>
+        <h2 class="section-title">Where Our Beans Come From</h2>
+        <div class="divider"></div>
+        <p style="color:var(--ink-mid);line-height:1.85;margin-bottom:28px;">Every batch of coffee we serve begins with a relationship. We work directly with small-scale farming cooperatives who share our commitment to quality and sustainability. Beans are roasted fresh every week at our partner roastery.</p>
+        <div>
+          <div class="origin-item">
+            <span class="origin-flag">🇪🇹</span>
+            <div class="origin-info">
+              <h4>Yirgacheffe, Ethiopia</h4>
+              <p>Bright, floral, and complex with notes of jasmine, bergamot, and stone fruit.</p>
+            </div>
+            <span class="origin-badge">Primary Blend</span>
+          </div>
+          <div class="origin-item">
+            <span class="origin-flag">🇷🇼</span>
+            <div class="origin-info">
+              <h4>Huye Mountain, Rwanda</h4>
+              <p>Full-bodied with caramel sweetness and a clean, smooth finish.</p>
+            </div>
+            <span class="origin-badge">Secondary Blend</span>
+          </div>
+          <div class="origin-item">
+            <span class="origin-flag">🇬🇹</span>
+            <div class="origin-info">
+              <h4>Antigua, Guatemala</h4>
+              <p>Rich, chocolatey, and nutty. Featured as our seasonal espresso blend.</p>
+            </div>
+            <span class="origin-badge">Seasonal</span>
+          </div>
+        </div>
+      </div>
+      <div style="border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-lg);aspect-ratio:4/5;">
+        <img src="https://images.unsplash.com/photo-1525610553991-2bede1a236e2?w=800&auto=format&fit=crop&q=80" alt="Coffee bean sourcing" style="width:100%;height:100%;object-fit:cover;" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Team -->
+<section class="section-pad" style="background:var(--cream);">
+  <div class="container">
+    <div class="text-center">
+      <span class="eyebrow">The People Behind the Cup</span>
+      <h2 class="section-title">Our Team</h2>
+      <div class="divider divider-center"></div>
+      <p class="section-sub">Every member of our team is trained in both craft and hospitality. We don't just serve coffee — we create experiences.</p>
+    </div>
+    <div class="grid-4" style="margin-top:52px;">
+      <div class="team-card">
+        <div class="team-img"><img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80" alt="Head Barista" loading="lazy" /></div>
+        <div class="team-body">
+          <h3 class="team-name">Lethabo Nkosi</h3>
+          <div class="team-role">Head Barista</div>
+          <p class="team-bio">Trained in Cape Town and Addis Ababa. Lethabo has been crafting perfect espresso since day one.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-img"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&auto=format&fit=crop&q=80" alt="Pastry Chef" loading="lazy" /></div>
+        <div class="team-body">
+          <h3 class="team-name">Palesa Molapo</h3>
+          <div class="team-role">Pastry Chef</div>
+          <p class="team-bio">The creative mind behind every croissant, muffin, and seasonal bake on our menu.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-img"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&auto=format&fit=crop&q=80" alt="Café Manager" loading="lazy" /></div>
+        <div class="team-body">
+          <h3 class="team-name">Tšepiso Dlamini</h3>
+          <div class="team-role">Café Manager</div>
+          <p class="team-bio">Ensures every visit feels seamless and every customer leaves happy. The backbone of the operation.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-img"><img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&auto=format&fit=crop&q=80" alt="Barista" loading="lazy" /></div>
+        <div class="team-body">
+          <h3 class="team-name">Maphoka Tseole</h3>
+          <div class="team-role">Senior Barista</div>
+          <p class="team-bio">Specialises in cold brew and signature drinks. The creator of our Purple Lavender Latte.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Purple <span>Coffee</span></div>
+        <p>Maseru's most beloved coffee destination since 2019.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a><a href="menu.html">Menu</a>
+          <a href="preorder.html">Pre-Order</a><a href="delivery.html">Delivery</a><a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <div class="footer-links">
+          <a href="about.html">About Us</a><a href="loyalty.html">Loyalty Programme</a><a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <div class="footer-hours">
+          <div class="hour-row"><span class="day">Mon – Fri</span><span class="time">7:00 – 20:00</span></div>
+          <div class="hour-row"><span class="day">Saturday</span><span class="time">8:00 – 18:00</span></div>
+          <div class="hour-row"><span class="day">Sunday</span><span class="time">9:00 – 17:00</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Purple Coffee, Maseru. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<script src="js/main.js"></script>
+</body>
+</html>

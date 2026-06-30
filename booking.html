@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservations — Purple Coffee | Maseru, Lesotho</title>
+  <meta name="description" content="Reserve a table at Purple Coffee. Perfect for business meetings, celebrations, or a relaxed coffee date in Maseru." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+<nav id="navbar" class="solid">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Purple <span>Coffee</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="preorder.html">Pre-Order</a></li>
+      <li><a href="booking.html" class="active">Reservations</a></li>
+      <li><a href="delivery.html">Delivery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta"><a href="preorder.html" class="btn btn-gold">Order Now</a></div>
+    <div class="hamburger"><span></span><span></span><span></span></div>
+  </div>
+</nav>
+<nav class="mobile-nav">
+  <a href="index.html">Home</a><a href="menu.html">Menu</a><a href="preorder.html">Pre-Order</a>
+  <a href="booking.html">Reservations</a><a href="delivery.html">Delivery</a>
+  <a href="loyalty.html">Loyalty</a><a href="about.html">About Us</a><a href="contact.html">Contact</a>
+</nav>
+<div class="nav-overlay"></div>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="sep">/</span>
+      <span class="current">Reservations</span>
+    </div>
+    <h1>Reserve a Table</h1>
+    <p>Planning a meeting, celebration, or a quiet afternoon? Book your table and we'll have everything ready for your visit.</p>
+  </div>
+</div>
+
+<section class="form-section section-pad">
+  <div class="container">
+    <div class="grid-2" style="gap:48px;align-items:start;">
+      <div>
+        <img
+          src="header.jpeg"
+          alt="Purple Coffee interior seating"
+          style="width:100%;border-radius:var(--radius);box-shadow:var(--shadow-lg);"
+          loading="lazy"
+        />
+        <div style="margin-top:28px;padding:28px;background:var(--cream);border-radius:var(--radius);border-left:3px solid var(--gold);">
+          <h3 style="font-size:1.2rem;margin-bottom:12px;">Private Dining and Events</h3>
+          <p style="font-size:0.87rem;color:var(--ink-mid);line-height:1.75;">Hosting a corporate breakfast, birthday, or private tasting? We can accommodate groups of up to 30 guests. Contact us directly for custom packages.</p>
+          <a href="contact.html" class="btn btn-outline-dark" style="margin-top:16px;font-size:0.82rem;padding:10px 20px;">Get in Touch</a>
+        </div>
+      </div>
+
+      <div class="form-box">
+        <h2 style="font-size:1.8rem;margin-bottom:6px;">Book Your Table</h2>
+        <p style="color:var(--ink-light);font-size:0.88rem;margin-bottom:28px;">Fields marked <span class="req">*</span> are required. We'll confirm your booking by phone or SMS.</p>
+
+        <form id="booking-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="book-name">Full Name <span class="req">*</span></label>
+              <input type="text" id="book-name" class="form-control" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="book-phone">Phone Number <span class="req">*</span></label>
+              <input type="tel" id="book-phone" class="form-control" placeholder="+266 5000 0000" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="book-date">Date <span class="req">*</span></label>
+              <input type="date" id="book-date" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="book-time">Arrival Time <span class="req">*</span></label>
+              <select id="book-time" class="form-control" required>
+                <option value="">Select time...</option>
+                <option>07:00</option><option>07:30</option><option>08:00</option><option>08:30</option>
+                <option>09:00</option><option>09:30</option><option>10:00</option><option>10:30</option>
+                <option>11:00</option><option>11:30</option><option>12:00</option><option>12:30</option>
+                <option>13:00</option><option>13:30</option><option>14:00</option><option>14:30</option>
+                <option>15:00</option><option>15:30</option><option>16:00</option><option>16:30</option>
+                <option>17:00</option><option>17:30</option><option>18:00</option><option>18:30</option>
+                <option>19:00</option><option>19:30</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Number of Guests <span class="req">*</span></label>
+            <div class="table-size-grid">
+              <button type="button" class="table-size-btn">1 Guest</button>
+              <button type="button" class="table-size-btn">2 Guests</button>
+              <button type="button" class="table-size-btn">3–4 Guests</button>
+              <button type="button" class="table-size-btn">5–6 Guests</button>
+              <button type="button" class="table-size-btn">7+ Guests</button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="book-occasion">Occasion</label>
+            <select id="book-occasion" class="form-control">
+              <option value="">Select occasion (optional)...</option>
+              <option>Business Meeting</option>
+              <option>Birthday Celebration</option>
+              <option>Date Night</option>
+              <option>Friends Catch-up</option>
+              <option>Study Session</option>
+              <option>Anniversary</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="book-notes">Special Requests</label>
+            <textarea id="book-notes" class="form-control" placeholder="Window seat, wheelchair access, dietary requirements..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit">Confirm Reservation</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Success Modal -->
+<div class="modal" id="booking-success">
+  <div class="modal-backdrop"></div>
+  <div class="modal-box">
+    <button class="modal-close" data-modal-close="booking-success">x</button>
+    <div class="modal-check">
+      <svg fill="none" viewBox="0 0 24 24" stroke-width="2" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"/></svg>
+    </div>
+    <h3>Table Reserved</h3>
+    <p>Your reservation has been received. We'll confirm by phone or SMS shortly. We look forward to welcoming you to Purple Coffee.</p>
+    <button class="btn btn-primary btn-submit" onclick="closeModal('booking-success')">Done</button>
+  </div>
+</div>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Purple <span>Coffee</span></div>
+        <p>Maseru's most beloved coffee destination since 2019.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a><a href="menu.html">Menu</a>
+          <a href="preorder.html">Pre-Order</a><a href="delivery.html">Delivery</a><a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <div class="footer-links">
+          <a href="about.html">About Us</a><a href="loyalty.html">Loyalty Programme</a><a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <div class="footer-hours">
+          <div class="hour-row"><span class="day">Mon – Fri</span><span class="time">7:00 – 20:00</span></div>
+          <div class="hour-row"><span class="day">Saturday</span><span class="time">8:00 – 18:00</span></div>
+          <div class="hour-row"><span class="day">Sunday</span><span class="time">9:00 – 17:00</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Purple Coffee, Maseru. All rights reserved.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-top" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+<script src="js/main.js"></script>
+</body>
+</html>

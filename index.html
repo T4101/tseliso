@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Purple Coffee — Artisan Coffee &amp; Café | Maseru, Lesotho</title>
+  <meta name="description" content="Maseru's finest coffee destination. Single-origin brews, house-baked pastries, and a welcoming atmosphere in the heart of Lesotho since 2019." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+
+
+<!-- Navbar -->
+<nav id="navbar">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">Purple <span>Coffee</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="preorder.html">Pre-Order</a></li>
+      <li><a href="booking.html">Reservations</a></li>
+      <li><a href="delivery.html">Delivery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="preorder.html" class="btn btn-gold">Order Now</a>
+    </div>
+    <div class="hamburger" role="button" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<nav class="mobile-nav" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="menu.html">Menu</a>
+  <a href="preorder.html">Pre-Order</a>
+  <a href="booking.html">Reservations</a>
+  <a href="delivery.html">Delivery</a>
+  <a href="loyalty.html">Loyalty</a>
+  <a href="about.html">About Us</a>
+  <a href="contact.html">Contact</a>
+</nav>
+<div class="nav-overlay"></div>
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-video">
+    <video
+      id="heroBgVideo"
+      src="insta vid.mp4"
+      autoplay
+      loop
+      muted
+      playsinline
+    ></video>
+  </div>
+
+  <!-- Sound toggle button -->
+  <button class="sound-toggle" id="soundToggle" aria-label="Toggle sound">
+    <svg id="iconMuted" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+      <line x1="23" y1="9" x2="17" y2="15"/><line x1="17" y1="9" x2="23" y2="15"/>
+    </svg>
+    <svg id="iconSound" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+      <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+      <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+    </svg>
+  </button>
+
+  <div class="hero-overlay"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        Every Cup<br /><em>Tells a Story</em>
+      </h1>
+      <p class="hero-desc">
+        Maseru's most celebrated coffee destination. Single-origin brews,
+        lovingly baked pastries, and an atmosphere that feels like home — elevated.
+      </p>
+      <div class="hero-cta">
+        <a href="preorder.html" class="btn btn-gold">Pre-Order Now</a>
+        <a href="menu.html" class="btn btn-outline">View Menu</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <span class="stat-num">12,000+</span>
+          <span class="stat-label">Happy Customers</span>
+        </div>
+        <div>
+          <span class="stat-num">48</span>
+          <span class="stat-label">Coffee Varieties</span>
+        </div>
+        <div>
+          <span class="stat-num">5 Years</span>
+          <span class="stat-label">Serving Maseru</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Features Strip -->
+<div class="features-strip">
+  <div class="container">
+    <div class="features-grid">
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2m0 14v2m9-9h-2M5 12H3m15.36-6.36-1.41 1.41M6.05 17.95l-1.41 1.41M17.95 17.95l-1.41-1.41M6.05 6.05 4.64 7.46"/></svg>
+        </div>
+        <div class="feature-text">
+          <h4>Single-Origin Beans</h4>
+          <p>Sourced directly from Ethiopian Yirgacheffe and Rwandan highland farms. Roasted fresh every week.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"/></svg>
+        </div>
+        <div class="feature-text">
+          <h4>Baked Fresh Daily</h4>
+          <p>Every croissant, muffin, and loaf is made from scratch each morning in our kitchen.</p>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg>
+        </div>
+        <div class="feature-text">
+          <h4>Office Delivery</h4>
+          <p>Coffee and snacks delivered across Maseru CBD. Free delivery on orders over M150.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- About Preview -->
+<section class="about-section section-pad">
+  <div class="container">
+    <div class="grid-2">
+      <div class="about-img-wrap">
+        <div class="about-img-main">
+          <img src="mgee.jpeg" alt="Purple Coffee café interior" loading="lazy" />
+        </div>
+       
+      </div>
+      <div class="about-content">
+        <span class="eyebrow">Our Story</span>
+        <h2 class="section-title">Where Maseru Comes to Savour Every Sip</h2>
+        <div class="divider"></div>
+        <p>Purple Coffee was born in 2019 from a single ambition: to bring world-class coffee culture to the heart of Maseru. What began as a small corner café on Kingsway has grown into Lesotho's most beloved coffee destination.</p>
+        <p>We source our beans directly from Ethiopian and Rwandan farms, roast fresh weekly, and pair them with pastries baked from scratch every morning. From your first cup to your last, we are here to make every moment extraordinary.</p>
+        <ul class="about-list">
+          <li>Ethically Sourced Beans</li>
+          <li>Award-Winning Baristas</li>
+          <li>Baked Fresh Daily</li>
+          <li>Eco-Friendly Packaging</li>
+          <li>Free High-Speed WiFi</li>
+          <li>Charging Stations</li>
+        </ul>
+        <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Menu Preview -->
+<section class="menu-section section-pad">
+  <div class="container">
+    <div class="text-center">
+      <span class="eyebrow">Our Offerings</span>
+      <h2 class="section-title">The Purple Menu</h2>
+      <div class="divider divider-center"></div>
+      <p class="section-sub">Crafted with passion, served with precision. All prices in Maloti (M).</p>
+    </div>
+
+    <div class="menu-tabs">
+      <button class="menu-tab active" data-tab="tab-hot">Hot Coffee</button>
+      <button class="menu-tab" data-tab="tab-cold">Cold Drinks</button>
+      <button class="menu-tab" data-tab="tab-pastry">Pastries</button>
+      <button class="menu-tab" data-tab="tab-snacks">Snacks</button>
+    </div>
+
+    <!-- Hot Coffee -->
+    <div class="menu-panel active" id="tab-hot">
+      <div class="menu-card">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&auto=format&fit=crop&q=80" alt="Espresso" loading="lazy" />
+          <span class="menu-card-badge">Best Seller</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Classic Espresso</h3>
+          <p class="menu-card-desc">Single or double shot of our house Ethiopian blend. Intense, bold, and rich.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">M35 <span>/ cup</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=600&auto=format&fit=crop&q=80" alt="Cappuccino" loading="lazy" />
+          <span class="menu-card-badge">Popular</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Velvety Cappuccino</h3>
+          <p class="menu-card-desc">Creamy steamed milk meets bold espresso with hand-crafted latte art.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">M55 <span>/ cup</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1561047029-3000c68339ca?w=600&auto=format&fit=crop&q=80" alt="Lavender Latte" loading="lazy" />
+          <span class="menu-card-badge">Signature</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Purple Lavender Latte</h3>
+          <p class="menu-card-desc">Our signature creation — espresso with house-made lavender syrup and oat milk.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">M70 <span>/ cup</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cold Drinks -->
+    <div class="menu-panel" id="tab-cold">
+      <div class="menu-card">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&auto=format&fit=crop&q=80" alt="Cold Brew" loading="lazy" />
+          <span class="menu-card-badge">Must Try</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">24hr Cold Brew</h3>
+          <p class="menu-card-desc">Steeped 24 hours in cold water. Incredibly smooth with zero bitterness.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">M70 <span>/ glass</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1625772452859-1c03d884dcd7?w=600&auto=format&fit=crop&q=80" alt="Iced Latte" loading="lazy" />
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Iced Vanilla Latte</h3>
+          <p class="menu-card-desc">Chilled espresso over ice with Madagascar vanilla and fresh milk.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">M65 <span>/ glass</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1571950006418-f33be7e9d1f7?w=600&auto=format&fit=crop&q=80" alt="Matcha" loading="lazy" />
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Iced Matcha Latte</h3>
+          <p class="menu-card-desc">Ceremonial-grade Japanese matcha whisked with chilled oat milk and ice.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">M75 <span>/ glass</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pastries -->
+    <div class="menu-panel" id="tab-pastry">
+      <div class="menu-card">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&auto=format&fit=crop&q=80" alt="Croissant" loading="lazy" />
+          <span class="menu-card-badge">Baked Fresh</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Butter Croissant</h3>
+          <p class="menu-card-desc">Flaky, golden, and buttery — baked fresh each morning. Plain or filled.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">M45 <span>/ piece</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=600&auto=format&fit=crop&q=80" alt="Blueberry Muffin" loading="lazy" />
+          <span class="menu-card-badge">Best Seller</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Wild Blueberry Muffin</h3>
+          <p class="menu-card-desc">Moist, fluffy muffin loaded with fresh blueberries and a crunchy sugar crust.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">M40 <span>/ piece</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=600&auto=format&fit=crop&q=80" alt="Cinnamon Roll" loading="lazy" />
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Classic Cinnamon Roll</h3>
+          <p class="menu-card-desc">Warm, gooey cinnamon roll drizzled with cream cheese glaze.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">M50 <span>/ piece</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Snacks -->
+    <div class="menu-panel" id="tab-snacks">
+      <div class="menu-card">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=600&auto=format&fit=crop&q=80" alt="Club Sandwich" loading="lazy" />
+          <span class="menu-card-badge">New</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Club Sandwich</h3>
+          <p class="menu-card-desc">Toasted triple-decker with chicken, bacon, egg, lettuce and our signature aioli.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">M120 <span>/ serving</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=600&auto=format&fit=crop&q=80" alt="Cheesecake" loading="lazy" />
+          <span class="menu-card-badge">Weekly Favourite</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">New York Cheesecake</h3>
+          <p class="menu-card-desc">Creamy baked cheesecake on a buttery biscuit base with berry compote.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">M75 <span>/ slice</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-card-img">
+          <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=600&auto=format&fit=crop&q=80" alt="Cookies" loading="lazy" />
+          <span class="menu-card-badge">House Made</span>
+        </div>
+        <div class="menu-card-body">
+          <h3 class="menu-card-name">Triple Chocolate Cookies</h3>
+          <p class="menu-card-desc">Soft-baked cookies with white, milk, and dark chocolate chunks. Two per serving.</p>
+          <div class="menu-card-footer">
+            <div class="menu-price">M38 <span>/ pack</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center" style="margin-top:48px;">
+      <a href="menu.html" class="btn btn-outline-dark">View Full Menu</a>
+    </div>
+  </div>
+</section>
+
+<!-- Specials -->
+<section class="specials-section section-pad" style="background:var(--cream);">
+  <div class="container">
+    <div class="text-center">
+      <span class="eyebrow">This Week</span>
+      <h2 class="section-title">Special Offers</h2>
+      <div class="divider divider-center"></div>
+      <p class="section-sub">Exclusive deals updated every week.</p>
+    </div>
+    <div class="grid-2" style="gap:20px;">
+      <div class="promo-card">
+        <div class="promo-img">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=200&auto=format&fit=crop&q=80" alt="Cappuccino" loading="lazy" />
+        </div>
+        <div class="promo-info">
+          <h3>Cappuccino Weekend Deal</h3>
+          <p>Valid Saturday and Sunday only. All sizes included.</p>
+          <div class="promo-pricing">
+            <span class="promo-old">M55</span>
+            <span class="promo-new">M44</span>
+            <span class="promo-save">Save 20%</span>
+          </div>
+        </div>
+      </div>
+      <div class="promo-card">
+        <div class="promo-img">
+          <img src="https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=200&auto=format&fit=crop&q=80" alt="Muffin" loading="lazy" />
+        </div>
+        <div class="promo-info">
+          <h3>Muffin Morning Bundle</h3>
+          <p>Any 2 muffins plus any hot coffee before 10am.</p>
+          <div class="promo-pricing">
+            <span class="promo-old">M135</span>
+            <span class="promo-new">M99</span>
+            <span class="promo-save">Save M36</span>
+          </div>
+        </div>
+      </div>
+      <div class="promo-card">
+        <div class="promo-img">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=200&auto=format&fit=crop&q=80" alt="Cold Brew" loading="lazy" />
+        </div>
+        <div class="promo-info">
+          <h3>Cold Brew Thursdays</h3>
+          <p>Every Thursday — our 24hr cold brew at a special rate.</p>
+          <div class="promo-pricing">
+            <span class="promo-old">M70</span>
+            <span class="promo-new">M55</span>
+            <span class="promo-save">Save M15</span>
+          </div>
+        </div>
+      </div>
+      <div class="promo-card">
+        <div class="promo-img">
+          <img src="https://images.unsplash.com/photo-1551024739-78b9bf04ee99?w=200&auto=format&fit=crop&q=80" alt="Macarons" loading="lazy" />
+        </div>
+        <div class="promo-info">
+          <h3>Loyalty Double Stamps</h3>
+          <p>Every Friday: earn double stamps on every purchase.</p>
+          <div class="promo-pricing">
+            <span class="promo-new" style="font-size:1.2rem;">2x Stamps</span>
+            <span class="promo-save">Fridays Only</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials-section">
+  <div class="container">
+    <div class="text-center">
+      <span class="eyebrow">What People Say</span>
+      <h2 class="section-title">Loved by Maseru</h2>
+      <div class="divider divider-center" style="background:rgba(255,255,255,0.2);"></div>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">Purple Coffee is my daily ritual. The lavender latte is unlike anything else in Maseru. The team know my order by name.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">TM</div>
+          <div>
+            <div class="author-name">Thabiso Mokoena</div>
+            <div class="author-role">Architect, Maseru</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">I pre-ordered for a team of eight and everything was seamless — piping hot and exactly right when we arrived. Remarkable service.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">NL</div>
+          <div>
+            <div class="author-name">Nthabi Letsie</div>
+            <div class="author-role">Office Manager, LNDC</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">Having visited coffee shops across southern Africa, Purple Coffee genuinely stands out. The cold brew is world-class and the atmosphere is beautiful.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">KS</div>
+          <div>
+            <div class="author-name">Karabo Setlalekgosi</div>
+            <div class="author-role">Travel Writer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-inner">
+      <div>
+        <span class="eyebrow">Stay Connected</span>
+        <h2 class="section-title">Get Weekly Specials</h2>
+        <div class="divider"></div>
+        <p style="color:var(--ink-mid);margin-bottom:0;">New menu items, exclusive offers, and loyalty rewards delivered to your inbox. No spam — just great coffee news.</p>
+        <form class="newsletter-form newsletter-form-el" style="margin-top:20px;">
+          <input type="email" placeholder="Your email address" required />
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+        </form>
+        <p class="newsletter-disclaimer">By subscribing you agree to receive marketing emails. Unsubscribe anytime.</p>
+      </div>
+      <div class="newsletter-right">
+        <div class="news-item">
+          <div class="news-item-icon">
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 11-.99-3.467l2.31-.66a2.25 2.25 0 001.632-2.163zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 01-1.632 2.163l-1.32.377a1.803 1.803 0 01-.99-3.467l2.31-.66A2.25 2.25 0 009 15.553z"/></svg>
+          </div>
+          <div>
+            <h5>Jazz &amp; Coffee Fridays</h5>
+            <p>Live music every Friday evening from 6pm. Book your table in advance.</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-item-icon">
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M16.5 18.75h-9m9 0a3 3 0 013 3h-15a3 3 0 013-3m9 0v-3.375c0-.621-.503-1.125-1.125-1.125h-.871M7.5 18.75v-3.375c0-.621.504-1.125 1.125-1.125h.872m5.007 0H9.497m5.007 0a7.454 7.454 0 01-.982-3.172M9.497 14.25a7.454 7.454 0 00.981-3.172M5.25 4.236c-.982.143-1.954.317-2.916.52A6.003 6.003 0 007.73 9.728M5.25 4.236V4.5c0 2.108.966 3.99 2.48 5.228M5.25 4.236V2.721C7.456 2.41 9.71 2.25 12 2.25c2.291 0 4.545.16 6.75.47v1.516M7.73 9.728a6.726 6.726 0 002.748 1.35m8.272-6.842V4.5c0 2.108-.966 3.99-2.48 5.228m2.48-5.492a46.32 46.32 0 012.916.52 6.003 6.003 0 01-5.395 4.972m0 0a6.726 6.726 0 01-2.749 1.35m0 0a6.772 6.772 0 01-3.044 0"/></svg>
+          </div>
+          <div>
+            <h5>Purple Rewards Programme</h5>
+            <p>Earn a stamp with every purchase. 10 stamps earns you one free premium coffee.</p>
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-item-icon">
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+          </div>
+          <div>
+            <h5>Corporate Catering</h5>
+            <p>Feed your team. Orders over M500 receive a 15% corporate discount.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">Purple <span>Coffee</span></div>
+        <p>Maseru's most beloved coffee destination since 2019. Artisan brews, fresh pastries, and a community that feels like family.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-link" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigate</h4>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="preorder.html">Pre-Order</a>
+          <a href="booking.html">Reservations</a>
+          <a href="delivery.html">Delivery</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <div class="footer-links">
+          <a href="about.html">About Us</a>
+          <a href="loyalty.html">Loyalty Programme</a>
+          <a href="delivery.html">Delivery Zones</a>
+          <a href="contact.html">Careers</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Opening Hours</h4>
+        <div class="footer-hours">
+          <div class="hour-row"><span class="day">Mon – Fri</span><span class="time">7:00 – 20:00</span></div>
+          <div class="hour-row"><span class="day">Saturday</span><span class="time">8:00 – 18:00</span></div>
+          <div class="hour-row"><span class="day">Sunday</span><span class="time">9:00 – 17:00</span></div>
+          <div class="hour-row"><span class="day">Public Holidays</span><span class="time">9:00 – 16:00</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Purple Coffee, Maseru. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-top" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
